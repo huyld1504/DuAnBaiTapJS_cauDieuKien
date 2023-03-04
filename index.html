@@ -11,9 +11,9 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-body-secondary">
     <h3>Bài tập 1: QUẢN LÝ TUYỂN SINH</h3> <br><br><br>
-    <div class="container rounded-3 w-50" style="background-color: rgba(23,244,120,5);">
+    <div class="container rounded-3 w-50" style="background-color: rgba(255,255,244,.5);">
         <div class="form-group"> <br><br>
             <h1 class="text-center fw-bold text-danger mb-4" style="text-transform: uppercase;">Kết quả thi của thí sinh</h1>
             <div class="row">
@@ -39,10 +39,30 @@
             <div class="btn-click" style="text-align: center;">
                 <button class="btn btn-danger mt-5 fs-2" id="btn-ketQua">KẾT QUẢ</button> <br><br>
             </div>
+            <div class="alert" id="congBoDiem"></div>
             <div class="alert" id="ket-qua-bai-1"></div>
             <!-- <div class="bg-success mx-auto w-75 fs-4 text-center rounded-2">Hệ thống ghi nhận do bạn nhập sai dữ liệu. <br> Vui lòng nhập lại đúng dữ liệu!!!</div> -->
         </div>
     </div>
+    <br><br><hr><br><br>
+    <h3>Bài 2: TINH TIỀN ĐIỆN</h3>
+    <div class="container rounded-2 w-50" style="background-color: rgba(0,0,0,.1);">
+        <h1>Thông tin tiêu thụ điện</h1>
+        <div class="row">
+            <p class="col-6 fs-3 mt-3 ms-3">Nhập số tiêu thụ điện tại đây:</p>
+            <input class="col-2 mt-3 rounded-2 d-block fs-5" style="margin-right: 120px;width: 170px;height: 50px;" id="tieuThuDien" placeholder="Tính theo KWh">
+        </div>
+        <button>Tính tiền</button>
+        <div class="alert"></div>
+    
+    </div>
+
+
+
+
+
+
+
     <script src="/JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
