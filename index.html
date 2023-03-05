@@ -82,11 +82,31 @@
         <button class="btn btn-success d-block mx-auto fs-3" id="btn-tinhThue">Tính thuế</button>
         <div class="alert" id="ket-qua-bai-3"></div>
     </div>
-    
     <br><br><br><br><br>
+    <h1>Bài tập 4: Tính tiền cáp </h1>
+    <div class="container bg-danger-subtle">
+        <h3 class="text-center text-uppercase text-danger pt-2 fs-1 fw-bolder">Hóa đơn tính tiền cáp</h3>
+        <div class="row mt-5">
+            <!-- <div class="name-kinhdoanh bg-light w-50 rounded-3 col-6 text-center mt-5" style="margin-left: 60px;">
+                <h3 class="text-center text-uppercase text-black pt-2">Hộ kinh doanh</h3>
+                <input type="radio" name="hoTinhTien" class="fs-1 mx-2 mt-4" id="giaDinh"><span class="fs-4 text-primary">Nhà dân</span>
+                <input type="radio" name="hoTinhTien" class="fs-1 mx-2 mt-4" id="doanhNghiep"><span class="fs-4 text-primary">Doanh Nghiệp</span>
+            </div> -->
+            <select name="" id="hoKinhDoanh" class="fs-3 w-25 border-0 bg-light col-4 mx-auto rounded-2">
+                <option value="1" id="khachHang">Chọn Khách Hàng</option>
+                <option value="1" class="fw-bold text-uppercase" id="hoGiaDinh">Hộ Gia Đình</option>
+                <option value="2" class="fw-bold text-uppercase" id="doanhNg">Doanh Nghiệp</option>
+            </select>
+            <input id="maKhachHang" class="bg-light rounded-2 border-0 fs-3 w-25 col-4" placeholder="Thông tin khách hàng">
+            <input id="soKenhCaoCap" class="bg-light fs-3 rounded-2 border-0 w-25 col-4 mx-auto" type="number" placeholder="Số kênh cao cấp">
+        </div>  
+        <div id="hoKD"></div>
+        <button class="btn btn-success fs-3 mt-4 d-block mx-auto" id="btn-tinhTienCap">Tính tiền</button>
+    </div>
+    
+    
 
-
-
+<br><br><br><br><br><br>
 
 
     <script src="/JS/script.js"></script>
