@@ -15,7 +15,8 @@
     <h3>Bài tập 1: QUẢN LÝ TUYỂN SINH</h3> <br><br><br>
     <div class="container rounded-3 w-50" style="background-color: rgba(255,255,244,.5);">
         <div class="form-group"> <br><br>
-            <h1 class="text-center fw-bold text-danger mb-4" style="text-transform: uppercase;">Kết quả thi của thí sinh</h1>
+            <h1 class="text-center fw-bold text-danger mb-4" style="text-transform: uppercase;">Kết quả thi của thí sinh
+            </h1>
             <div class="row">
                 <select id="khuVuc" class="text-center p-2 fs-3 fw-bold col-5 rounded-2 mx-auto bg-body-secondary">
                     <option value="0">Chọn khu vực</option>
@@ -32,9 +33,12 @@
             </div><br>
             <h2 class="text-center text-black mb-3">Mời thí sinh nhập điểm thi của mình tại đây</h2>
             <div class="row">
-                <input placeholder="Môn 1" id="mon1" class="fw-bolder col-3 mx-auto mt-3 rounded-2 bg-success-subtle fs-4 fw-bold text-center text-black">
-                <input placeholder="Môn 2" id="mon2" class="fw-bolder col-3 mx-auto mt-3 rounded-2 bg-success-subtle fs-4 fw-bold text-center text-black">
-                <input placeholder="Môn 3" id="mon3" class="fw-bolder col-3 mx-auto mt-3 rounded-2 bg-success-subtle fs-4 fw-bold text-center text-black">
+                <input placeholder="Môn 1" id="mon1"
+                    class="fw-bolder col-3 mx-auto mt-3 rounded-2 bg-success-subtle fs-4 fw-bold text-center text-black">
+                <input placeholder="Môn 2" id="mon2"
+                    class="fw-bolder col-3 mx-auto mt-3 rounded-2 bg-success-subtle fs-4 fw-bold text-center text-black">
+                <input placeholder="Môn 3" id="mon3"
+                    class="fw-bolder col-3 mx-auto mt-3 rounded-2 bg-success-subtle fs-4 fw-bold text-center text-black">
             </div>
             <div class="btn-click" style="text-align: center;">
                 <button class="btn btn-danger mt-5 fs-2" id="btn-ketQua">KẾT QUẢ</button> <br><br>
@@ -44,20 +48,42 @@
             <!-- <div class="bg-success mx-auto w-75 fs-4 text-center rounded-2">Hệ thống ghi nhận do bạn nhập sai dữ liệu. <br> Vui lòng nhập lại đúng dữ liệu!!!</div> -->
         </div>
     </div>
-    <br><br><hr><br><br>
+    <br><br>
+    <hr><br><br>
     <h3>Bài 2: TINH TIỀN ĐIỆN</h3>
-    <div class="container rounded-2 w-50" style="background-color: rgba(0,0,0,.1);">
-        <h1>Thông tin tiêu thụ điện</h1>
-        <div class="row">
-            <p class="col-6 fs-3 mt-3 ms-3">Nhập số tiêu thụ điện tại đây:</p>
-            <input class="col-2 mt-3 rounded-2 d-block fs-5" style="margin-right: 120px;width: 170px;height: 50px;" id="tieuThuDien" placeholder="Tính theo KWh">
+    <div class="container rounded-2 w-50 mt-4" style="background-color: rgba(0,0,0,.1);">
+        <h1 class="text-danger text-center text-uppercase pt-4 d-block">Thông tin tiêu thụ điện</h1>
+        <div class="row mx-auto">
+            <p class="col-6 fs-3 mt-3 ms-3 d-inline-block" style="margin-left: 500px;">Nhập số tiêu thụ điện tại đây:
+            </p>
+            <input class="col-2 mt-3 rounded-2 fs-5" style="width: 170px;height: 50px;" id="tieuThuDien"
+                placeholder="Tính theo KWh">
+            <button class="btn btn-success fs-4 col-2 ms-4 mt-3" style="height:50px;" id="btn-tinhTienDien">Tính
+                tiền</button>
         </div>
-        <button>Tính tiền</button>
-        <div class="alert"></div>
-    
+        <div class="alert fs-4 w-75 mx-auto mt-1" id="ket-qua-bai-2"></div>
     </div>
-
-
+    <br><br>
+    <hr><br><br>
+    <h3 class="text-uppercase">Bài 3: Tính tiền thuế thu nhập cá nhân</h3> <br><br><br>
+    <div class="container mx-auto bg-danger-subtle rounded-3 w-50">
+        <h1 class="text-center fs-2 text-black pt-4 text-uppercase d-block">Bảng tính tiền thuế thu nhập cá nhân</h1>
+        <div class="row gap-2 mt-4">
+            <input type="name" id="hoVaTen" type="text"
+                class="col-3 d-inline-block mx-auto rounded-2 border-0 mb-4 fs-6 bg-warning-subtle text-black"
+                placeholder="Họ và tên" style="height: 40px;">
+            <input type="number" id="thuNhap"
+                class="col-3 d-inline-block mx-auto rounded-2 border-0 mb-4 fs-6 bg-warning-subtle text-black"
+                placeholder="Thu nhập(triệu VND)" style="height: 40px;">
+            <input type="number" id="soNguoi"
+                class="col-3 d-inline-block mx-auto rounded-2 border-0 mb-4 fs-6 bg-warning-subtle text-black"
+                placeholder="Số người phụ thuộc" style="height: 40px;">
+        </div>
+        <button class="btn btn-success d-block mx-auto fs-3" id="btn-tinhThue">Tính thuế</button>
+        <div class="alert" id="ket-qua-bai-3"></div>
+    </div>
+    
+    <br><br><br><br><br>
 
 
 
