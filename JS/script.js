@@ -74,9 +74,37 @@ document.getElementById('btn-tinhThue').onclick = function () {
 
 //Bài 4:
 document.getElementById('hoKinhDoanh').onchange = function () {
-    var doanhNghiep = document.getElementById('doanhNg').value;
-    var khachHang = document.getElementById('khachHang').value;
-    var hoGiaDinh = document.getElementById('hoGiaDinh').value;
-    document.getElementById('hoKD').innerHTML = `<div class="row"><input  id="soKetNoi" class="bg-light fs-3 rounded-2 border-0 w-25 col-4 mx-auto mt-4" type="number" placeholder="Số kết nối"></div>`;
+    var hoKinhDoanh = document.getElementById('hoKinhDoanh').value;
+    var tagInput = document.getElementById('soKetNoi');
+    if (hoKinhDoanh == 'doanhNghiep') {
+        tagInput.style.opacity = '1';
+    } else if (hoKinhDoanh == 'hoGiaDinh') {
+        tagInput.style.opacity = '0';
+    }
+    document.getElementById('soKetNoi').innerHTML = tagInput;
+}
+
+document.getElementById('btn-tinhTienCap').onclick = function () {
+    var hoKinhDoanh = document.getElementById('hoKinhDoanh').value;
+    // var hoGiaDinh = document.getElementById('hoGiaDinh').value;
+    // var doanhNGhiep = document.getElementById('doanhNGhiep').value;
+    var maKhachHang = document.getElementById('maKhachHang').value;
+    var soKenhCaoCap = document.getElementById('soKenhCaoCap').value;
+    var soKetNoi = document.getElementById('soKetNoi').value;
+    var tinhTienCap = 0;
+    // switch (hoKinhDoanh) {
+    //     case 'hoGiaDinh' :{
+    //         tinhTienCap = 24.5 + 7.5*soKenhCaoCap
+    //     }; break;
+    //     case 'doanhNghiep' :{
+    //         tinhTienCap = 90 + (soKetNoi-10)*12.5 + 50*soKenhCaoCap
+    //     }; break;
+    // }
+    if (hoKinhDoanh == 'hoGiaDinh') {
+        tinhTienCap = 24.5 + 7.5 * soKenhCaoCap;
+    } else {
+        tinhTienCap = 15 +50*soKenhCaoCap + 75 + 12.5*(soKetNoi-10);
+    }
+    document.getElementById('ket-qua-bai-4').innerHTML = `<div class="alert bg-success-subtle text-center w-50 mx-auto my-3 fs-3">Mã khách hàng: ${maKhachHang} <br> Tiền cáp phải trả: ${tinhTienCap}$</div>`
 }
 
